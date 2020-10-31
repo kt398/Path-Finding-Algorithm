@@ -1,0 +1,11 @@
+
+__pycache__/map_cell.cpython-37.pyc
+__pycache__/map_cell.cpython-38.pyc
+__pycache__/grid.cpython-38.pyc
+output.txt
+runtime_dump.txt
+*.jpg
+benchmark/benchmarkdata.csv
+benchmark/benchmarkdata_16-10-2020-10-08-17.csv
+benchmark/benchmarkdata_16-10-2020-10-12-53.csv
+*.csv

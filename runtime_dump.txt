@@ -1,0 +1,75 @@
+         14992629 function calls (9820545 primitive calls) in 8.131 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        2    2.569    1.285    7.803    3.901 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:621(kt_astar_algo)
+10344377/5172293    1.786    0.000    1.786    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:50(__eq__)
+  2704438    0.989    0.000    0.989    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:58(__repr__)
+    14974    0.926    0.000    2.259    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:668(<listcomp>)
+    18410    0.491    0.000    0.900    0.000 {built-in method _heapq.heapify}
+    21512    0.383    0.000    0.383    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+    10756    0.293    0.000    0.293    0.000 {built-in method pygame.event.get}
+    12510    0.106    0.000    0.134    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:405(getAdjacentCells)
+    57600    0.082    0.000    0.082    0.000 {built-in method pygame.draw.rect}
+  1028581    0.072    0.000    0.072    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:54(__lt__)
+     2735    0.065    0.000    0.157    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:755(<listcomp>)
+    57960    0.052    0.000    0.052    0.000 {built-in method pygame.draw.line}
+    65428    0.036    0.000    0.043    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:480(find_travel_cost2)
+    33787    0.024    0.000    0.029    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:840(calculate_h)
+    15661    0.024    0.000    0.040    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:790(set_color_open)
+    57600    0.023    0.000    0.106    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:116(draw)
+    99441    0.020    0.000    0.020    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:96(is_blocked)
+        1    0.020    0.020    0.337    0.337 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:683(sequential_astar_algo)
+    12508    0.020    0.000    0.035    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:774(set_color_closed)
+        3    0.017    0.006    0.070    0.023 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:102(draw_grid_lines)
+    84417    0.016    0.000    0.016    0.000 {built-in method builtins.max}
+        3    0.016    0.005    0.194    0.065 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:112(draw_map)
+    12510    0.015    0.000    0.024    0.000 {built-in method _heapq.heappop}
+    50333    0.015    0.000    0.050    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:496(travel_cost)
+    30074    0.012    0.000    0.012    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:82(set_color)
+       17    0.009    0.001    0.009    0.001 {built-in method builtins.print}
+    80192    0.007    0.000    0.007    0.000 {method 'append' of 'list' objects}
+    34620    0.007    0.000    0.007    0.000 {built-in method math.sqrt}
+      687    0.006    0.000    0.014    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:725(<listcomp>)
+    67592    0.005    0.000    0.005    0.000 {built-in method builtins.abs}
+        2    0.005    0.002    0.005    0.002 {built-in method io.open}
+    18403    0.004    0.000    0.005    0.000 {built-in method _heapq.heappush}
+    28136    0.004    0.000    0.004    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\map_cell.py:79(get_color)
+        2    0.003    0.001    0.003    0.001 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\Astar_menu.py:430(get_num_closed)
+    23264    0.002    0.000    0.002    0.000 {built-in method builtins.len}
+     3825    0.002    0.000    0.006    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:680(sequential_f_val)
+        3    0.001    0.000    0.001    0.000 {built-in method pygame.display.update}
+        3    0.001    0.000    0.001    0.000 {method 'fill' of 'pygame.Surface' objects}
+        2    0.000    0.000    0.001    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:805(create_path)
+        1    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:815(sequential_create_path)
+        2    0.000    0.000    0.001    0.001 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:625(<listcomp>)
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:180(_clear_rg)
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:113(clear_setup)
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:107(clear_callback)
+       20    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\etc\Glue.py:215(getattr)
+       20    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\etc\Glue.py:223(getattr2)
+       30    0.000    0.000    0.000    0.000 {method 'clear' of 'guppy.sets.setsc.MutNodeSet' objects}
+        2    0.000    0.000    0.000    0.000 {method 'truncate' of '_io.TextIOWrapper' objects}
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:28(__call__)
+       20    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\etc\Glue.py:49(__getattr__)
+        2    0.000    0.000    0.000    0.000 {built-in method _locale._getdefaultlocale}
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:131(clear_drg)
+        2    0.000    0.000    0.000    0.000 C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.1776.0_x64__qbz5n2kfra8p0\lib\_bootlocale.py:11(getpreferredencoding)
+        7    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:829(calculate_f)
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       10    0.000    0.000    0.000    0.000 {method 'add' of 'guppy.sets.setsc.MutNodeSet' objects}
+       20    0.000    0.000    0.000    0.000 {method 'clear' of 'guppy.heapy.heapyc.NodeGraph' objects}
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:38(__init__)
+        1    0.000    0.000    0.012    0.012 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:685(<listcomp>)
+        3    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:62(get_rows)
+        3    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:68(get_size_y)
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+        2    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\Astar_menu.py:449(calc_h_eff)
+        3    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       10    0.000    0.000    0.000    0.000 C:\Users\Kunal Thakker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\guppy\heapy\View.py:25(__init__)
+        3    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:59(get_cols)
+        7    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:886(calculate_g)
+        3    0.000    0.000    0.000    0.000 c:\Coding\IntroToAI\Assignment1FromGithub\Ai_Assignment1\grid.py:65(get_size_x)
+
+

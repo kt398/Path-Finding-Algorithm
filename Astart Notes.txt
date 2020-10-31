@@ -1,0 +1,88 @@
+Radius --> Not good information from heuristic
+
+GOOD METRIC (for heuristic): # expanded nodes/ number of nodes on path
+	--> Closer it is to 1 the better
+
+Other notes:
+- Generating a new map keeps old start and end points but doesn't show them on map
+
+
+USEFUL PDF FOR PERFOMANCE TRACKING AND OPTIMIZING CODE:
+https://www.ace-net.ca/wp-content/uploads/2016/07/Python-Profiling-and-Optimizing-Code.pdf
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+	Track CPU runtime and Memory Usage:
+
+		1.) Run using: python -m cProfile -s cumulative Astar_menu.py
+				--> Outputs:	+---------------------------------------------------------------------+
+											|	1334018 function calls (1031718 primitive calls) in 17.172 seconds	|
+											|																																			|
+											|	Ordered by: cumulative time																					|
+											+---------------------------------------------------------------------+
+											|	ncalls  tottime  percall  cumtime  percall filename:lineno(function)|
+											|		...			...			...				...			...							...							|
+											|		...			...			...				...			...							...							|
+											|		(			THIS IS A BREAKDOWN OF THE PERFORMANCE			)								|
+											|		...			...			...				...			...							...							|
+											|		...			...			...				...			...							...							|
+											|																																			|
+											+---------------------------------------------------------------------+
+
+							NOTE: THIS SEEMS TO OUTPUT WAY TOO MUCH INFO, NEED TO SELECT WHICH METHODS TO TRACK
+										--> 		import cProfile
+
+														. . .
+
+														cProfile.run('algorithm(args)') <-- Including quotes
+
+
+			2.) TRACK SPECIFIC FUNCTIONS using "line_profiler"
+							- Install by typing: pip install line_profiler
+							- Add "@profile" before a method you want to track
+							- Run using: kernprof -l -v Astar_menu.py 					<==== Doesn't work for me for some reason
+							- Or run by:
+														import line_profiler
+														profiler = line_profiler.LineProfiler()
+														. . .
+														profiler.add_function(function(args))
+														profiler.print_stats()
+
+														ERROR: Astar_menu.py:91: UserWarning: Could not extract a code object for the object None
+  																	profiler_l.add_function(map.kt_astar_algo(START,END,heuristic,weight))
+
+							NOTE: OUTPUTS 1 LINE, NOT INFO FOR EVERYTHING WITHIN THE FUNCTION
+
+			3.) TRACK MEMORY USAGE using "memory_profiler"
+							- Install: pip install memory_profiler
+							- Install psutil to speed this up: pip install psutil
+							- Add @profile before the method def
+							- Run using: python -m memory_profiler Astar_menu.py
+
+								NOTE: Running with python Astar_menu.py seems to work too
+
+							==> Ouputs:
+														+---------------------------------------------------------------------+
+														|	Line #    Mem usage    Increment   Line Contents										|
+														|	================================================										|
+														|	 603     81.7 MiB     81.7 MiB       @profile												|
+														|																			<some function>									|
+														|		...				...					...								...												|
+														|		...				...					...								...												|
+														|		(			THIS IS A BREAKDOWN OF THE PERFORMANCE			)								|
+														|		...				...					...								...												|
+														|		...				...					...								...												|
+														|																																			|
+														+---------------------------------------------------------------------+
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+BENCHMARK FORMAT:
+
+Line: <runtime> <path length (g-value at end) as a function of the optimum length (g-value at end using admissible)> <Nodes expanded> <memory used> <heuristic efficiency*>
+
+		*heuristic efficiency = expanded nodes/ number of nodes on path*
+
+Run algorithm 50 times for each version of the algorithm, make a BENCHMARK file
+
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
